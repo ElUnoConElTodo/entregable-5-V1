@@ -10,7 +10,7 @@ const options = {
     secretOrKey: jwtSecret
 }
 
-passport.use(new JwtStrategy(options, (tokenDecoded, done) => {
+passport.use(new JwtStrategy(options, (tokenDecoded done) => {
 
     //!done(error, user)
 
